@@ -1,0 +1,33 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-nav {
+    display: none;
+  }
+
+  #nav-bar a:visited,
+  a:link {
+    padding: 20px;
+    margin-right: 1rem;
+  }
+
+  #wrap {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goal-icon,
+  .team-icon,
+  .primary-icon {
+    text-align: center;
+  }
+
+  .bi {
+    font-size: 150%;
+  }
+}

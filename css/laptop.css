@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  display: block;
+  margin: auto;
+}
+
+* > .section-title {
+  font-size: 1.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* banner */
+
+.banner-img {
+  position: relative;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#banner-text {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+}
+
+#banner-text span {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+/* nav-bar */
+
+#nav-bar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#nav-bar .container a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  border-left: 1px solid #d3d3d3;
+  padding: 10px;
+  display: inline-block;
+}
+
+#nav-bar .container a i {
+  color: #87ceeb;
+}
+
+#nav-bar .container .text-nav {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* thông tin cá nhân */
+
+#about .container .section-title {
+  margin-bottom: 20px;
+}
+
+#target {
+  padding: 40px 30px;
+  background-color: #e7f2f8;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#personal-info {
+  padding: 30px 80px 50px 30px;
+  background-color: #e7f2f8;
+  font-size: 18px;
+  border-radius: 35px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#about .container #target p,
+li {
+  color: grey;
+}
+
+/* an thong tin nguoi dung */
+
+#personal-info .section-content {
+  display: none;
+}
+
+#about .container #personal-info .mt-40 li span {
+  color: #000;
+  font-weight: 500;
+}
+
+#about .container #personal-info .icon-sn {
+  color: #87ceeb;
+  margin-left: 30px;
+}
+
+/* job-info */
+
+#job-info {
+  margin-bottom: 20px;
+}
+
+.job-box-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  border: 1px solid #d3d3d3;
+  padding: 20px 20px 30px 20px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#experience .job-content,
+#activity .job-content,
+#education .job-content,
+#language .job-content,
+#hobby .job-content,
+#skills .job-content {
+  display: none;
+}
+
+#job-info i {
+  font-size: 120%;
+}
+
+#job-info .job-box-grid .time {
+  color: grey;
+  font-weight: bold;
+}
+
+.present {
+  background-color: aqua;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: normal;
+  color: #000;
+}
+
+#job-info .job-box-grid .hobby {
+  display: flex;
+  flex-direction: row;
+  column-gap: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#job-info .job-box-grid .hobby i {
+  border: 3px solid rgb(47, 206, 255);
+  border-radius: 20px;
+  font-size: 120%;
+  padding: 7px;
+}
+
+.exp-bar {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.empty-exp-bar {
+  background: grey;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.view-button {
+  padding-left: 10px;
+}
+
+/* chứng chỉ */
+
+.img-cc {
+  width: 240px;
+  height: 100px;
+  margin-right: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cer-content {
+  display: flex;
+  gap: 20px;
+}
+
+.cer-content p {
+  color: grey;
+}
+
+.cer-content2 {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+
+.cer-content3 {
+  padding-top: 20px;
+  border-top: 2px solid #d6c08d;
+  grid-column: 1/-1;
+}
+
+/* dự án */
+
+#project .section-title {
+  margin-top: 10px;
+}
+
+.project-flex {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.project-title {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.project-border {
+  margin-bottom: 10px;
+  border-top: 1px solid #d3d3d3;
+  padding-top: 12px;
+  margin-left: 10px;
+}
+
+tr td {
+  padding: 10px;
+  border-top: 1px solid #d3d3d3;
+}
+
+tr td:first-child {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+/* liên hệ */
+#footer {
+  height: 50px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 50px;
+  color: #000;
+}
+
+#footer i {
+  color: #199cdb;
+}
+
+#footer a:hover {
+  color: #199cdb;
+  text-transform: uppercase;
+}
